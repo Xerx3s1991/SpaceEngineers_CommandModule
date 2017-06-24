@@ -21,17 +21,29 @@ namespace SpaceEngineers {
         //=======================================================================
         //////////////////////////BEGIN//////////////////////////////////////////
         //=======================================================================
-
+        IMyTextPanel stdin;
+        IMyTextPanel stdout;
+        /*SystemCmd[] syscmds = {
+            new SystemCmd(constructor goes here);
+        } */
+        
         public Putty() {
             // The constructor, called only once every session and
             // always before any other method is called. Use it to
             // initialize your script.
-            IMyTextPanel stdin = (IMyTextPanel)GridTerminalSystem.GetBlockWithName("Putty_In");
+            stdin = (IMyTextPanel)GridTerminalSystem.GetBlockWithName("Putty_In");
+            stdout = (IMyTextPanel)GridTerminalSystem.GetBlockWithName("Putty_Out");
         }
 
-        public void Main(string args) {
+        public void Main(string[] args) {
             // The main entry point of the script, invoked every time
             // one of the programmable block's Run actions are invoked.
+            switch (stdin.GetPublicText()) {
+                case "Start Refinery":
+                    //Start the Refinery
+                    break;
+
+            }
 
             // The method itself is required, but the argument above
             // can be removed if not needed.
