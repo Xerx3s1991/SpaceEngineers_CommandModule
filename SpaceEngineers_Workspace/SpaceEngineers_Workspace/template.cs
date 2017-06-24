@@ -16,7 +16,8 @@ using VRage.Game.ModAPI.Ingame;
 using SpaceEngineers.Game.ModAPI.Ingame;
 
 #endregion prescript
-namespace SpaceEngineers {
+namespace SpaceEngineers
+{
     public sealed class ScriptName : MyGridProgram
     {
         //=======================================================================
@@ -52,7 +53,7 @@ namespace SpaceEngineers {
         //=======================================================================
         //////////////////////////END////////////////////////////////////////////
         //=======================================================================
-#region postscript
+        #region postscript
     }
 }
 #endregion postscript
