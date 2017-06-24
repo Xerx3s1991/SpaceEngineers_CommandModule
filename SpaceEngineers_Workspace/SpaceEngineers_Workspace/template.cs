@@ -1,5 +1,5 @@
 ﻿#region prescript
-#if DEBUG
+
 using System;
 using System.Text;
 using System.Collections;
@@ -14,19 +14,16 @@ using VRage.Collections;
 using VRage.Game.ObjectBuilders.Definitions;
 using VRage.Game.ModAPI.Ingame;
 using SpaceEngineers.Game.ModAPI.Ingame;
-public sealed class Program : MyGridProgram{
 
-namespace SpaceEngineers
-{
-    public sealed class Program : MyGridProgram
-    {
-#endif
 #endregion prescript
-//=======================================================================
-//////////////////////////BEGIN//////////////////////////////////////////
-//=======================================================================
+namespace SpaceEngineers {
+    public sealed class ScriptName : MyGridProgram
+    {
+        //=======================================================================
+        //////////////////////////BEGIN//////////////////////////////////////////
+        //=======================================================================
 
-public Program()
+        public ScriptName()
         {
             // The constructor, called only once every session and
             // always before any other method is called. Use it to
@@ -56,8 +53,6 @@ public Program()
         //////////////////////////END////////////////////////////////////////////
         //=======================================================================
 #region postscript
-#if DEBUG
     }
 }
-#endif
 #endregion postscript
