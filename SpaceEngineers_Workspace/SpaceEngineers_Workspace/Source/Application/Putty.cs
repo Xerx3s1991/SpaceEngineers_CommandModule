@@ -54,32 +54,33 @@ namespace SpaceEngineers
         // @brief:
         // @field:
         // @memeber:
-        public class Master : Putty      
-        {
+        public class Master : Putty {
+
+            public Master(String args) : base(args) {
+
+            }
             /*SystemCmd[] syscmds = {
             new SystemCmd(constructor goes here);
             } */
 
-        }
 
 
-        public void Main(string[] args)
-        {
-            // The main entry point of the script, invoked every time
-            // one of the programmable block's Run actions are invoked.
+            public void Main(string[] args) {
+                // The main entry point of the script, invoked every time
+                // one of the programmable block's Run actions are invoked.
 
-            // The method itself is required, but the argument above
-            // can be removed if not needed.
-        }
+                // The method itself is required, but the argument above
+                // can be removed if not needed.
+            }
 
-        public void Save()
-        {
-            // Called when the program needs to save its state. Use
-            // this method to save your state to the Storage field
-            // or some other means.
+            public void Save() {
+                // Called when the program needs to save its state. Use
+                // this method to save your state to the Storage field
+                // or some other means.
 
-            // This method is optional and can be removed if not
-            // needed.
+                // This method is optional and can be removed if not
+                // needed.
+            }
         }
 
         //=======================================================================
