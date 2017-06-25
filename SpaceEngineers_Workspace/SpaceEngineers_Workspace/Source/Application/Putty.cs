@@ -26,7 +26,7 @@ namespace SpaceEngineers
 
         // ----------------------------------------------------------------------------------------------- Constants
 
-        public String nameOfMasterPuttyBlock = "Insert Master Name Here";
+        public const String nameOfMasterPuttyBlock = "Insert Master Name Here";
 
         // ----------------------------------------------------------------------------------------------- Class Defintions
 
@@ -36,9 +36,6 @@ namespace SpaceEngineers
         public abstract class Putty : MyGridProgram
         {
             IMyTextPanel myPutty;
-            /*SystemCmd[] syscmds = {
-                new SystemCmd(constructor goes here);
-            } */
 
             public Putty(String args)
             {
@@ -57,9 +54,13 @@ namespace SpaceEngineers
         // @brief:
         // @field:
         // @memeber:
-        //public class Master(String nameOfMasterPuttyBlock) : Putty        // Why does this not work?
-        //{                                                                 // Error Messages all over the place, seems like i am to dumb to declare it correctly
-        //}
+        public class Master : Putty      
+        {
+            /*SystemCmd[] syscmds = {
+            new SystemCmd(constructor goes here);
+            } */
+
+        }
 
 
         public void Main(string[] args)
