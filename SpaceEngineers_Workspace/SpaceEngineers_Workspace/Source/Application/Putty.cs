@@ -33,6 +33,12 @@ namespace SpaceEngineers {
             // initialize your script.
             stdin = (IMyTextPanel)GridTerminalSystem.GetBlockWithName("Putty_In");
             stdout = (IMyTextPanel)GridTerminalSystem.GetBlockWithName("Putty_Out");
+            // Check if wanted Blocks are in Grid
+            if((null == stdin) 
+                || (null == stdout))
+            {
+                throw new ArgumentException("You must supply Putty Blocks");
+            }
         }
 
         public void Main(string[] args) {
