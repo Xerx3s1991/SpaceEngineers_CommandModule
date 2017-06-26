@@ -74,11 +74,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Source\Application\Putty.cs" />
+    <Compile Include="Source\Service\Sorter.cs" />
     <Compile Include="template.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Source\Service\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
